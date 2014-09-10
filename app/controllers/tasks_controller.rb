@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+  http_basic_authenticate_with name: 'nithin', password: 'secret', except: [:index]
+
   before_action :set_task, only: [:show, :edit, :update, :destroy]
 
   # GET /tasks

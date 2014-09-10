@@ -36,3 +36,26 @@ To do this, we run the following command:
 This will generate a bunch of files, but first we will set up the database and the required tables for this.
 
     rake db:migrate
+
+### Adding some style (Twitter Bootstrap)
+
+Let's add twitter-bootstrap-rails gem to our application.
+
+    gem "twitter-bootstrap-rails"
+
+Now, we must run `bundle install`, followed by this command:
+
+    rails generate bootstrap:install static
+
+Overwrite the application layout to use bootstrap:
+
+    rails g bootstrap:layout application
+
+Now add this line in application.css
+
+    *= require bootstrap_and_overrides
+
+We can add bootstrap to the tasks pages using:
+
+    rails generate bootstrap:themed Tasks
+

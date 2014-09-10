@@ -59,3 +59,14 @@ We can add bootstrap to the tasks pages using:
 
     rails generate bootstrap:themed Tasks
 
+### Make tasks list the main page
+
+Open config/routes.rb and change it to look like this:
+
+    Rails.application.routes.draw do
+      resources :tasks
+      root to: 'tasks#index'
+    end
+
+Now localhost:3000/ will show you the list instead of localhost:3000/tasks.
+

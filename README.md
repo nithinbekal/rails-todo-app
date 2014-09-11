@@ -17,13 +17,11 @@ You should see something like `Rails 4.1.5`.
 
 ### Creating a new project
 
-The simplest way to create a new project is `rails new [project-name]`.
+To create a new Rails app called "tasks", run the following command:
 
-However, I am using a couple of extra options that will become useful later on in the demo.
+    rails new tasks
 
-    rails new tasks -d postgres --skip-test-unit
-
-The `-d postgresql` part asks rails to use postgres database. The `--skip-test-unit` is for skipping test files, which we won't be using right now.
+This will create a new tasks/ directory with a skeleton app. Start running this application by running `rails server` command. Now you will be able to see a welcome page if you open `http://localhost:3000/` in the browser.
 
 ### Adding tasks
 
@@ -36,6 +34,10 @@ To do this, we run the following command:
 This will generate a bunch of files, but first we will set up the database and the required tables for this.
 
     rake db:migrate
+
+This will automatically set up the code to add, edit or delete task items. Restart the rails application (you will need to hit Ctrl+C in the terminal where `rails server` command is running and then enter the `rails server` command again).
+
+Open localhost:3000/tasks to see a page that has an empty list of tasks. You will also find a link to a page where you will be able to add a new task. After you have added a task, you will see it listed in /tasks, along with options to edit and delete it.
 
 ### Adding some style (Twitter Bootstrap)
 

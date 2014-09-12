@@ -41,7 +41,7 @@ Open localhost:3000/tasks to see a page that has an empty list of tasks. You wil
 
 ### Adding some style (Twitter Bootstrap)
 
-Let's add twitter-bootstrap-rails gem to our application.
+Let's add [twitter-bootstrap-rails](https://github.com/seyhunak/twitter-bootstrap-rails) gem to our application.
 
     gem "twitter-bootstrap-rails"
 

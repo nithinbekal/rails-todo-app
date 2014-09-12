@@ -72,3 +72,9 @@ Open config/routes.rb and change it to look like this:
 
 Now localhost:3000/ will show you the list instead of localhost:3000/tasks.
 
+### Adding another model
+
+Let's create a notes section in our web app, but this time without using scaffold. We will only generate the migration file and the model, and then write the rest of code required to flesh it out. To generate the model, run the command:
+
+    rails generate model Note title:string body:text
+

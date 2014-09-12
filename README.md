@@ -78,3 +78,11 @@ Let's create a notes section in our web app, but this time without using scaffol
 
     rails generate model Note title:string body:text
 
+### More Ruby and Rails references
+
+If you are getting started with Ruby, I recommend Chris Pine's [Learn to Program](http://pine.fm/LearnToProgram/) book, which you can read online. It is quite short, so you can go through it in a very short time. [Why's Poignant Guide to Ruby](http://mislav.uniqpath.com/poignant-guide/) is another book I will recommend if you are feeling adventurous. (Be warned: this book is full of crazy cartoons and talking foxes). ;-)
+
+To get started with Rails, [Ruby on Rails Tutorial: Learn Rails by Example](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book) is a great place to start. The book walks you through building an entire Rails application.
+
+If you don't want to install Ruby or go through the books, you can also try out Ruby in the browser on [TryRuby.org](http://tryruby.org/) or [RubyMonk](http://rubymonk.org/).
+
